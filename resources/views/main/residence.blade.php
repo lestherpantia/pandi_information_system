@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title')
-    Pandi Residence
+    LGU-Pandi Resident Information System
 @stop
 
 {{--@section('header')--}}
