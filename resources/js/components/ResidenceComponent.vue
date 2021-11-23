@@ -715,7 +715,7 @@ export default {
                 return;
             }
 
-            if(this.residence.birthday_month == null || this.residence.birthday_day == null || this.residence.birthday_year === '' || this.residence.birthday_month === '' || this.residence.birthday_day === '' || this.residence.birthday_year === '') {
+            if(this.residence.birthdate === '') {
                 this.messageBox('error', 'Input Required', 'Birthday is Required!', 'Okay');
                 return;
             }
@@ -817,7 +817,7 @@ export default {
                 if(response.status === 200)
                 {
                     this.messageBox('success', 'Save Successfully', 'Residence Successfully Saved!', 'Okay');
-                    setTimeout(function(){ location.reload() }, 2000);
+                    setTimeout(function(){ location.reload() }, 1000);
                 }
             }).catch(errors => {
 
@@ -886,6 +886,7 @@ export default {
                 if(response.status === 200)
                 {
                     this.messageBox('success', 'Save Successfully', 'House Hold Successfully Saved!', 'Okay');
+                    setTimeout(function(){ location.reload() }, 1000);
                 }
             })
         },

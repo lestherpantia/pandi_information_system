@@ -2897,7 +2897,7 @@ __webpack_require__.r(__webpack_exports__);
         return;
       }
 
-      if (this.residence.birthday_month == null || this.residence.birthday_day == null || this.residence.birthday_year === '' || this.residence.birthday_month === '' || this.residence.birthday_day === '' || this.residence.birthday_year === '') {
+      if (this.residence.birthdate === '') {
         this.messageBox('error', 'Input Required', 'Birthday is Required!', 'Okay');
         return;
       }
@@ -2998,7 +2998,7 @@ __webpack_require__.r(__webpack_exports__);
 
           setTimeout(function () {
             location.reload();
-          }, 2000);
+          }, 1000);
         }
       })["catch"](function (errors) {
         var message = errors.response.data.errors;
@@ -3059,6 +3059,10 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (response) {
         if (response.status === 200) {
           _this4.messageBox('success', 'Save Successfully', 'House Hold Successfully Saved!', 'Okay');
+
+          setTimeout(function () {
+            location.reload();
+          }, 1000);
         }
       });
     },

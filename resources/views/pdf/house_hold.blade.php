@@ -10,9 +10,8 @@
             content: counter(page);
         }
 
-        /** Define now the real margins of every page in the PDF **/
         body {
-            margin: 10px 50px 30px 50px;
+            margin: 145px 30px 30px 30px;
             font-family: Arial, sans-serif;
         }
 
@@ -22,6 +21,7 @@
             position: fixed;
             padding: 50px 0px 0px 0px;
             width: 100%;
+            top: 0;
             height: 75px;
         }
 
@@ -45,8 +45,7 @@
         /* main */
 
         main {
-            margin-top: 130px;
-            font-size: 13px;
+            font-size: 10px;
         }
 
         main table {
